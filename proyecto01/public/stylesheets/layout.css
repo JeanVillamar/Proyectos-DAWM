@@ -1,0 +1,47 @@
+.columns {
+    display: flex; /*Contenedor de columnas*/
+}
+
+.column {
+    flex: 1; /*Tamaño predeterminado de todas las columnas*/
+    display: flex;
+    flex-direction: column; /* Cada artículo se ubica verticalmente */
+}
+
+.article {
+    flex: 1; /* Ajusta el artículo para que rellene el espacio sobrante */
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto ;
+}
+
+.article-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.article-content {
+    flex: 1; /* Hace que el contenido llene el espacio sobrante y empuja el resto de etiquetas hasta el final */
+}
+
+
+.article-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-column {
+flex: 2; /*Columna principal*/
+}
+
+@media screen and (max-width: 800px) {
+.columns,
+.column {
+  display: flex;
+}
+
+.columns {
+  flex-direction: column;
+}
+}

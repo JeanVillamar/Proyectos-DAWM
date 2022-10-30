@@ -1,0 +1,31 @@
+.social{
+    padding: 1.15rem 4rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.social__buttons {
+    padding: 0;
+    display:flex;
+    justify-content:center;
+    gap: 1.35rem;
+  }
+
+  .social__buttons .fa {
+    transition: 0.5s ease-in-out;
+  }
+  
+ .social__buttons .fa:hover {
+    font-size: 1.5rem;
+  }
+
+  .social__buttons{
+    list-style: none;
+    
+  }
+
+

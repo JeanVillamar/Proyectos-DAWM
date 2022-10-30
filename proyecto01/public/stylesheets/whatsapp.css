@@ -1,0 +1,24 @@
+
+.Whatsapp{
+    background-color: #2bf19fd9;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.Whatsapp:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+.botonwa{
+    width: 30px;
+    transition: ease 1s;
+}

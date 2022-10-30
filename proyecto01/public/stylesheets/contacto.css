@@ -1,0 +1,18 @@
+.contacto {
+    padding-top: 5vw;
+    padding-bottom: 3.5rem;
+    padding-left: 15vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin:5vw auto;
+    background-color: black;
+  }
+
+  .contacto .home__intro-title{
+    font-size:1.1cm;
+    font-weight:700;
+  }
+

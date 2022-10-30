@@ -1,0 +1,89 @@
+
+@import url("stylesheets/footer.css");
+@import url("stylesheets/whatsapp.css");
+@import url("stylesheets/inicial.css");
+@import url("stylesheets/nav.css");
+@import url("stylesheets/perfil.css");
+@import url("stylesheets/resumen.css");  
+@import url("stylesheets/portafolio.css");  
+@import url("stylesheets/contacto.css");  
+
+
+body{
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+
+div, h2, p, figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.main {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 20px;
+  }
+
+  .article-image {
+    background: #eee;
+    display: block;
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+  }
+  
+  .article-image img {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .article-body {
+    padding: 20px;
+  }
+  
+  .article-title {
+    color: #333;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .article-content {
+    margin-top: 5px;
+  }
+  
+  .article-info {
+    font-size: 0.85em;
+    margin-top: 10px;
+  }
+  
+  .article:hover,
+  .article:focus {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: #444;
+  }
+  
+  .article {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  } 
+  
+
+
+
+.background__blur{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    /*background-image:url("https://images.pexels.com/photos/13536018/pexels-photo-13536018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 300ms;
+}
+

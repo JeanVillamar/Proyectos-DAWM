@@ -1,0 +1,91 @@
+.loguito span{
+    font-family: 'Courier New', sans-serif;
+    color: #b0f2c2;
+}
+
+.loguito{
+    display: flex;
+    
+
+}
+
+.imagenes-container{
+    position: fixed; /*Para colocarlo  como si fuera "Flotante"*/
+    display:grid;  /*usado para que se adapte a las pantallas flex*/
+    justify-content:center ;
+    align-items: flex-start;
+    height: 100vh;   
+    
+
+    
+}
+
+.imagenes-container .imagen{
+    position: relative;
+    margin-right: -20px;
+    display: inline-flex; /*Para que vaya de izquierda a derecha*/
+    flex-direction: row;
+}
+
+.imagenes-container .imagen img{
+    width: 100px;
+    height: 100px;    
+    opacity: 70%;
+    transition: transform 0.3s ease-in-out; /*para que la transicion sea mas lenta
+    y el ease-in-out es el tipo de animación ease-in-out inicio de la animación y el final*/
+    padding: 20px;
+}
+
+.imagenes-container .imagen .nombre{
+    position:relative;
+    background-color: #c7f6d4;
+    opacity: 50%;
+    border-radius: 5px;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    display: none;
+    min-width: 115px;
+    width: 100px;   
+    height: 40px; 
+    
+    left: calc(-50% 10px);
+    padding: 10px 15px;
+}
+
+.imagenes-container .imagen .nombre .text{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden; /*Usado para cuando el texto es muy grande se oculte como "..."*/
+    white-space: nowrap; /*En caso de que exista espacios en blanco hacerlos mas pequeño además de suprimir los saltos de líneas*/
+    margin: 0 auto; /*arriba-abajo=0 izq-derch=automatico*/
+    width: 150px;   /*Cuando el texto sobrepasa los 150px sale el desbordamiento por lo tanto se oculta*/
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.imagenes-container .imagen:hover .nombre{
+    display: flex;
+}
+
+
+/*Agregando el pseudoelemento o decurador ::before*/
+.imagenes-container .imagen .nombre::before{
+    content: ""; /*Nos pide obligatoriamente agg el contenido sin embargo como lo queremos usar como decorador lo ponemos vacío*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -20%;
+    bottom: 5px;    
+    
+    
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid #c7f6d4;
+    border-bottom: 12px solid transparent;
+}
+
+.imagenes-container .imagen:hover img{
+    transform: translateY(-15px);
+    opacity: 100%;
+}

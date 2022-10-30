@@ -1,0 +1,38 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box; /*Para que no haya desbordamiento acomodo todos los elementos*/
+}
+
+* {
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+html{
+    scroll-behavior: smooth; /*Permite un "efecto de desplazamiento" animado suave entre elementos dentro del cuadro de desplazamiento*/
+}
+
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+nav.img{
+    position:fixed;
+    display:flex;
+
+
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  overflow-wrap: break-word; /*estableciendo si el navegador debe insertar saltos de línea dentro de una cadena que de otro modo sería indescifrable para evitar que el texto se desborde en su cuadro de línea.*/
+}
+
+
+

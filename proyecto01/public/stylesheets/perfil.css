@@ -1,0 +1,16 @@
+.perfil {
+    padding-top: 5vw;
+    padding-bottom: 3.5rem;
+    padding-left: 15vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  .perfil .home__intro-title{
+    font-size:1.1cm;
+    font-weight:700;
+  }
+
