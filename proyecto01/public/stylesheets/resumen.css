@@ -29,7 +29,7 @@
   }
 
   .resumen_intro {
-    overflow: hidden;
+    overflow: hidden;  /*Para que no se vea la transición del efecto de la imagen*/
     
     /*box-shadow: 2px 3px 11px -2px #77dd77; */
   }

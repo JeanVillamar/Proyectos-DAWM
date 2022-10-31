@@ -15,17 +15,17 @@
     gap: 1.35rem;
   }
 
-  .social__buttons .fa {
+  .social__buttons .fa-brands {
+    color: #77dd77;
     transition: 0.5s ease-in-out;
   }
   
- .social__buttons .fa:hover {
+ .social__buttons .fa-brands:hover {
     font-size: 1.5rem;
   }
 
   .social__buttons{
     list-style: none;
-    
   }
 
 
