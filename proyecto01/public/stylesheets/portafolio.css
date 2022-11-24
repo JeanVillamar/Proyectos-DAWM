@@ -72,5 +72,24 @@
     font-size: 1.2rem;
    }
    
+   @media screen and (max-width: 800px) {
+    .portafolio{
+      display: flex;
+      flex-direction: column;
+      height: 130vh;
+      
+    
+    }    
+    .portafolio contact__map {
+      width: 85%;
+      
+    }
+
+    .containerPortafolio{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+}
 
 

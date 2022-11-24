@@ -20,9 +20,9 @@
     <nav>	
 	<div class="loguito"> 		
 		<h2>J<span>V</span></h2>	
-		<audio width="400px" controls muted autoplay loop> 
-			<source src="music/musica2.mpeg" type="audio/mpeg">
-			<source src="music/musica2.mp3" type="audio/mp3">
+		<audio width="400px" controls muted loop> 
+			<source src="music/pillo-buena-gente.m4a" type="audio/m4a">
+			<source src="music/pillo-buena-gente.mp3" type="audio/mp3">
 			Tu navegar no es compatible con el audio  de HTML:5
 		</audio>
 	</div>
@@ -115,23 +115,6 @@
 				</a>
 			  </div>
 
-			</div>
-
-			<div class="card">
-			  <div class="card__img">
-				<img width="180px" src="img/img.jpg">
-			  </div>
-			  <div class="card__title">
-				<h2>Project Description</h2>
-			  </div>
-			  <div class="card__proyect-links">
-				<a href="#">
-				  <i class="fab fa-github"></i>
-				</a>
-				<a href="">
-				  <i class="fa-solid fa-circle-info"></i>
-				</a>
-			  </div>
 			</div>
 
 			<div class="card">
@@ -258,7 +241,14 @@
 		  <b>Horarios de atención:</b>
 		  Lunes a viernes, 9:00 - 16:00
 		</p>
+		
 	  </div>
+
+	  <label for="name">Ingrese Mensaje:</label>
+
+		<input type="text" id="name" name="name" required
+       minlength="4" maxlength="100" size="30">
+
 
 	  <form action="" class="contact__form">
 		<input
@@ -276,9 +266,52 @@
 	  </form>
 	</div>
   </section>
+
+  <section class="plans" id="plans">
+	<h2 class="plans__title">Planes</h2>
+	<p class="plans__description">Eliga su plan según sus necesidades.</p>
+	<div class="plans__cards">
+	  <div class="plans__card">
+		<ul class="plans__card-price">
+		  <li class="plans__card-header rounded">Básico</li>
+		  <li class="card-grey">$ 49.99</li>
+		  <li>Sitio web</li>
+		  <li>Datos estáticos</li>
+		  <li>Soporte errores</li>
+		  <li class="card-grey">
+			<a href="#" class="plans__card-button rounded">Contratar</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div class="plans__card plans__card-active">
+		<ul class="plans__card-price">
+		  <li class="plans__card-header rounded">Pro</li>
+		  <li class="card-grey">$ 79.99</li>
+		  <li>Aplicación web</li>
+		  <li>Backend simple</li>
+		  <li>Soporte mejoras</li>
+		  <li class="card-grey">
+			<a href="#" class="plans__card-button rounded">Contratar</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div class="plans__card">
+		<ul class="plans__card-price">
+		  <li class="plans__card-header rounded">Premium</li>
+		  <li class="card-grey">$ 99.99</li>
+		  <li>Aplicación web</li>
+		  <li>AWS</li>
+		  <li>Soporte 24/7</li>
+		  <li class="card-grey">
+			<a href="#" class="plans__card-button rounded">Contratar</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </section>
 	
 
-		<footer class="social social--dark" id="social">
+		<footer class="social" id="social">
 			<ul class="social__buttons">
 			  <li>
 				<a

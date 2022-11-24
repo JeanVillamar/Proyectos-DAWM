@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<autorizacion>
+<estado>AUTORIZADO</estado>
+<numeroAutorizacion>1701202007099115950900120010060000006851234567814</numeroAutorizacion>
+<fechaAutorizacion>2020-01-24T10:51:04-05:00</fechaAutorizacion>
+<ambiente>PRODUCCIÓN</ambiente>
+<comprobante><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<comprobanteRetencion id="comprobante" version="2.0.0"><infoTributaria><ambiente>2</ambiente><tipoEmision>1</tipoEmision><razonSocial>ELECTROLEG S.A.</razonSocial><nombreComercial>ELECTROLEG S.A.</nombreComercial><ruc>0991159509001</ruc><claveAcceso>1701202007099115950900120010060000006851234567814</claveAcceso><codDoc>07</codDoc><estab>001</estab><ptoEmi>006</ptoEmi><secuencial>000000685</secuencial><dirMatriz>Guayaquil  Padre Solano 1309 y García Moreno</dirMatriz></infoTributaria><infoCompRetencion><fechaEmision>17/01/2020</fechaEmision><dirEstablecimiento>Padre Solano 1309 y García Moreno</dirEstablecimiento><contribuyenteEspecial>136</contribuyenteEspecial><obligadoContabilidad>SI</obligadoContabilidad><tipoIdentificacionSujetoRetenido>04</tipoIdentificacionSujetoRetenido><parteRel>SI</parteRel><razonSocialSujetoRetenido>ROCIO RAFAELA VILLAMAR BRIONES</razonSocialSujetoRetenido><identificacionSujetoRetenido>0912253853001</identificacionSujetoRetenido><periodoFiscal>01/2020</periodoFiscal></infoCompRetencion><docsSustento><docSustento><codSustento>01</codSustento><codDocSustento>01</codDocSustento><numDocSustento>001001000017828</numDocSustento><fechaEmisionDocSustento>17/01/2020</fechaEmisionDocSustento><fechaRegistroContable>17/01/2020</fechaRegistroContable><numAutDocSustento>1125864238</numAutDocSustento><pagoLocExt>01</pagoLocExt><totalSinImpuestos>6.56</totalSinImpuestos><importeTotal>7.71</importeTotal><impuestosDocSustento><impuestoDocSustento><codImpuestoDocSustento>2</codImpuestoDocSustento><codigoPorcentaje>2</codigoPorcentaje><baseImponible>6.88</baseImponible><tarifa>12.00</tarifa><valorImpuesto>0.83</valorImpuesto></impuestoDocSustento></impuestosDocSustento><retenciones><retencion><codigo>1</codigo><codigoRetencion>312</codigoRetencion><baseImponible>6.88</baseImponible><porcentajeRetener>1</porcentajeRetener><valorRetenido>0.07</valorRetenido></retencion><retencion><codigo>2</codigo><codigoRetencion>1</codigoRetencion><baseImponible>0.83</baseImponible><porcentajeRetener>30</porcentajeRetener><valorRetenido>0.25</valorRetenido></retencion></retenciones><pagos><pago><formaPago>20</formaPago><total>7.71</total></pago></pagos></docSustento></docsSustento><infoAdicional><campoAdicional nombre="DIRECCION PROVEEDOR">AV.QUITO 2026 ENTRE MANABI Y HUANCAVILCA</campoAdicional><campoAdicional nombre="EMAIL PROVEEDOR:">juanmarv1985@gmail.com</campoAdicional></infoAdicional><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature505505">
+<ds:SignedInfo Id="Signature-SignedInfo686664">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+<ds:Reference Id="SignedPropertiesID766205" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature505505-SignedProperties1009220">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>/BWk0oY8S2e2e7zV0aBsQZTGZeI=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate11040223">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>Ye/30qXOCFiEVcY/DCxy/QLMToE=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-990570" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>6h7Y6jcsivEyH+dxg9w9y/WdPz4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="SignatureValue622164">
+jdRU043+CnG/KWwSHaw2kCcHGDd1ozcdcW9RAX94GvPz/MUrsXFSbXsOvFYpL9Z7Q0BWE69096Ha
+bHwC/F9lEaAIJvVgJxogW3b3YYZHhg49OBGBKoNF9AbyadmdtbnouZgvktDCeSILLFaPzj5qXij3
+2zLy/GhwJutuCkPLyipLRVYmh8I6c27vjATyGuJdMb9UIVGanq97oPCckCTqoP1Uus25TnmSpTAK
+hJpy9fr0ZBqrvBBl+A6M3FyLGzpFsCTR7Db8ioScrrJIuywu1cTk+81rJZINjzM7eUcv6kf2vBq8
+DiMDdUwPJI7wwcykfiUlUZIR2s9fQsQBkV45oQ==
+</ds:SignatureValue>
+<ds:KeyInfo Id="Certificate11040223">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIJ7TCCB9WgAwIBAgIEW10JNDANBgkqhkiG9w0BAQsFADCBoTELMAkGA1UEBhMCRUMxIjAgBgNV
+BAoTGUJBTkNPIENFTlRSQUwgREVMIEVDVUFET1IxNzA1BgNVBAsTLkVOVElEQUQgREUgQ0VSVElG
+SUNBQ0lPTiBERSBJTkZPUk1BQ0lPTi1FQ0lCQ0UxDjAMBgNVBAcTBVFVSVRPMSUwIwYDVQQDExxB
+QyBCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMB4XDTE4MDkxODIwMzc1MloXDTIwMDkxODIxMDc1
+MlowgbQxCzAJBgNVBAYTAkVDMSIwIAYDVQQKExlCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMTcw
+NQYDVQQLEy5FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04tRUNJQkNFMQ4w
+DAYDVQQHEwVRVUlUTzE4MBEGA1UEBRMKMDAwMDMxMTUwMzAjBgNVBAMTHE1BUklPIEVEVUFSRE8g
+Sk9SREFOIEdBTExJTk8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDJmgkH+jMKEyW9
+WfNyaw2OuEXKrgca30M0ube3PREyr9Eexhb1u3piW87S9r9yPmTVBGoE7FOlfGgJm01Sn8uQYCu+
+vrK8rgN4dhZHk43VS13Sje44hhGZt4K+iegybGfBqt4olPdd8jX5oxeFdyijigBTvlfnKPq7eDzV
+TmyZpVL6UtrgUnV4zcE2aBBZgNO67UgIrD2Cr0Zijf1G3SJVM3th6nfI813+zQZmd8faWowspFKZ
+WavzTjZ7k4WzaC17KBr94LmmYUJBFAX3pLomYtptLfMaT5TOCMKDd0E8Qwj7kH9Zqi8hP0NfR0Is
+3VqVNjyzHncA4vrQFgBq+GfvAgMBAAGjggUWMIIFEjALBgNVHQ8EBAMCB4AwZwYDVR0gBGAwXjBc
+BgsrBgEEAYKoOwICATBNMEsGCCsGAQUFBwIBFj9odHRwOi8vd3d3LmVjaS5iY2UuZWMvcG9saXRp
+Y2EtY2VydGlmaWNhZG8vcGVyc29uYS1qdXJpZGljYS5wZGYwgZEGCCsGAQUFBwEBBIGEMIGBMD4G
+CCsGAQUFBzABhjJodHRwOi8vb2NzcC5lY2kuYmNlLmVjL2VqYmNhL3B1YmxpY3dlYi9zdGF0dXMv
+b2NzcDA/BggrBgEFBQcwAYYzaHR0cDovL29jc3AxLmVjaS5iY2UuZWMvZWpiY2EvcHVibGljd2Vi
+L3N0YXR1cy9vY3NwMB0GCisGAQQBgqg7AwoEDxMNRUxFQ1RST0xFRyBTQTAdBgorBgEEAYKoOwML
+BA8TDTA5OTExNTk1MDkwMDEwGgYKKwYBBAGCqDsDAQQMEwowOTE0MTk5MjExMB0GCisGAQQBgqg7
+AwIEDxMNTUFSSU8gRURVQVJETzAWBgorBgEEAYKoOwMDBAgTBkpPUkRBTjAXBgorBgEEAYKoOwME
+BAkTB0dBTExJTk8wHwYKKwYBBAGCqDsDBQQREw9HRVJFTlRFIEdFTkVSQUwwMQYKKwYBBAGCqDsD
+BwQjEyFQQURSRSBTT0xBTk8gMTMwOSBZIEdBUkNJQSBNT1JFTk8wGQYKKwYBBAGCqDsDCAQLEwkw
+NDM3MzE0MDAwGQYKKwYBBAGCqDsDCQQLEwlHdWF5YXF1aWwwFwYKKwYBBAGCqDsDDAQJEwdFQ1VB
+RE9SMCAGCisGAQQBgqg7AzMEEhMQU09GVFdBUkUtQVJDSElWTzAhBgNVHREEGjAYgRZtam9yZGFu
+QGVsZWN0cm9sZWcuY29tMIIB3wYDVR0fBIIB1jCCAdIwggHOoIIByqCCAcaGgdVsZGFwOi8vYmNl
+cWxkYXBzdWJwMS5iY2UuZWMvY249Q1JMNjI2LGNuPUFDJTIwQkFOQ08lMjBDRU5UUkFMJTIwREVM
+JTIwRUNVQURPUixsPVFVSVRPLG91PUVOVElEQUQlMjBERSUyMENFUlRJRklDQUNJT04lMjBERSUy
+MElORk9STUFDSU9OLUVDSUJDRSxvPUJBTkNPJTIwQ0VOVFJBTCUyMERFTCUyMEVDVUFET1IsYz1F
+Qz9jZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2WGNGh0dHA6Ly93d3cuZWNpLmJjZS5lYy9D
+UkwvZWNpX2JjZV9lY19jcmxmaWxlY29tYi5jcmykgbUwgbIxCzAJBgNVBAYTAkVDMSIwIAYDVQQK
+ExlCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMTcwNQYDVQQLEy5FTlRJREFEIERFIENFUlRJRklD
+QUNJT04gREUgSU5GT1JNQUNJT04tRUNJQkNFMQ4wDAYDVQQHEwVRVUlUTzElMCMGA1UEAxMcQUMg
+QkFOQ08gQ0VOVFJBTCBERUwgRUNVQURPUjEPMA0GA1UEAxMGQ1JMNjI2MCsGA1UdEAQkMCKADzIw
+MTgwOTE4MjAzNzUyWoEPMjAyMDA5MTgyMTA3NTJaMB8GA1UdIwQYMBaAFBj58PvmMhyZZjkqyouy
+aX1JJ7/OMB0GA1UdDgQWBBQw7u4r3iupdsevoejrEDY8kQzEWTAJBgNVHRMEAjAAMBkGCSqGSIb2
+fQdBAAQMMAobBFY4LjEDAgSwMA0GCSqGSIb3DQEBCwUAA4ICAQBjCIxG/M4kkZvu/Xhi52oNxyvz
+NulTxGu8BUrqeQL4STu80z10gEw/7cxjK07E3Hl6Eaa7ZH5zx3agdVrsWl11Q5q30E2bxqn1/0pK
+Ub7i7UcWlCd1l5yhAywLWEmvnAOaF9j//QsmbCw18/D+aG36aP5YGnf0kj79BQ8J0iR8dEx21JMK
+kRuc//azE/POEvd0HdlBjz/QpT6TH7KDnp9RAPXlbLeiRZg7svOQhdD2CZr8p278ybtFY4EZ24AW
+CUk7ieVMABQT1jZ8m5xo4WyyeS/XaLcfAcGcA6EK7J9IOBDdr0y08k7h1Fi++AKYq41PCJQ6zYag
+JhTkbVTE0CCI5T4Mg7iEj9NaDk8aQKERFeTRNUKtVMTghpKbkIFfuswvHG/0pgMj4RscWXfjLMnv
+hE4N/bxrugF62AxgnH4ymRTJlrTY1u7WtBpU/4Tn2Zb8c5em/nA/0NXDMq1Iev2qGES/ji9IMkrN
+scU7HCUaWlaKPiKLbiP2RhZ7/5/hwwAtPlyFIDRl0n8onL8mvWqcrrv/ynYWbgc6F/Nf8bNOZcua
+9OJwALxtT/qOWonzmzIzetcCqAL1+5O+yFElfuXA29LGiN5F0umiDIzkfOelZyYt/bh5SzCvtmkK
+LNiUDz5BEPnEHKflbG/9KlahdVFvgK4mUrAEXaWGpFak3YQSmA==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+yZoJB/ozChMlvVnzcmsNjrhFyq4HGt9DNLm3tz0RMq/RHsYW9bt6YlvO0va/cj5k1QRqBOxTpXxo
+CZtNUp/LkGArvr6yvK4DeHYWR5ON1Utd0o3uOIYRmbeCvonoMmxnwareKJT3XfI1+aMXhXcoo4oA
+U75X5yj6u3g81U5smaVS+lLa4FJ1eM3BNmgQWYDTuu1ICKw9gq9GYo39Rt0iVTN7Yep3yPNd/s0G
+ZnfH2lqMLKRSmVmr8042e5OFs2gteyga/eC5pmFCQRQF96S6JmLabS3zGk+UzgjCg3dBPEMI+5B/
+WaovIT9DX0dCLN1alTY8sx53AOL60BYAavhn7w==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+<ds:Object Id="Signature505505-Object326141"><etsi:QualifyingProperties Target="#Signature505505"><etsi:SignedProperties Id="Signature505505-SignedProperties1009220"><etsi:SignedSignatureProperties><etsi:SigningTime>2020-01-24T10:50:25-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>CmBOhORwsRtsMBPv+HeW/zb7jFI=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1532823860</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-990570"><etsi:Description>Descripcion del documento</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></comprobanteRetencion>]]></comprobante>
+<mensajes/>
+</autorizacion>
+

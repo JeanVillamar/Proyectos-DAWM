@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<autorizacion>
+<estado>AUTORIZADO</estado>
+<numeroAutorizacion>0601202007099305837800120010010000013751263491716</numeroAutorizacion>
+<fechaAutorizacion>2020-01-06T15:52:36-05:00</fechaAutorizacion>
+<ambiente>PRODUCCIÓN</ambiente>
+<comprobante><![CDATA[<?xml version="1.0" encoding="UTF-8"?><comprobanteRetencion id="comprobante" version="1.0.0">
+	<infoTributaria>
+		<ambiente>2</ambiente>
+	    <tipoEmision>1</tipoEmision>
+	    <razonSocial>PROYECTOS Y CONSTRUCCIONES QUEVEDO CONSTRUQUEVEDO S.A</razonSocial>
+	    <nombreComercial>CONSTRUQUEVEDO S.A</nombreComercial>
+	    <ruc>0993058378001</ruc>
+	    <claveAcceso>0601202007099305837800120010010000013751263491716</claveAcceso>
+	    <codDoc>07</codDoc>
+	    <estab>001</estab>
+	    <ptoEmi>001</ptoEmi>
+	    <secuencial>000001375</secuencial>
+	    <dirMatriz>PARROQUIA XIMENA, BARRIO DEL SEGURO, CALLE VALPARAISO N 100</dirMatriz>
+  	</infoTributaria>
+	<infoCompRetencion>
+	    <fechaEmision>06/01/2020</fechaEmision>
+		
+	    
+	    <obligadoContabilidad>SI</obligadoContabilidad>
+	    <tipoIdentificacionSujetoRetenido>04</tipoIdentificacionSujetoRetenido>
+	    <razonSocialSujetoRetenido>VILLAMAR BRIONES ROCIÓ RAFAELA</razonSocialSujetoRetenido>
+	    <identificacionSujetoRetenido>0912253853001</identificacionSujetoRetenido>
+	    <periodoFiscal>01/2020</periodoFiscal>
+  	</infoCompRetencion>
+  	<impuestos>
+	      
+      <impuesto>
+        <codigo>1</codigo>
+        <codigoRetencion>312</codigoRetencion>
+        <baseImponible>390.42000</baseImponible>
+        <porcentajeRetener>1.00</porcentajeRetener>
+        <valorRetenido>3.90000</valorRetenido>
+		
+        <codDocSustento>01</codDocSustento>
+        <numDocSustento>001001000017727</numDocSustento>
+        <fechaEmisionDocSustento>06/01/2020</fechaEmisionDocSustento>
+      </impuesto>
+	
+	</impuestos>
+	
+    <infoAdicional>
+	
+		
+			<campoAdicional nombre="Descripción:">BOMBA DE AGUA, NUDO, NEPLO, ETC. CASA 105</campoAdicional>
+		
+	
+	
+    </infoAdicional>
+	
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature7982">
+<ds:SignedInfo Id="Signature-SignedInfo807456">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference Id="SignedPropertiesID413121" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature7982-SignedProperties310523">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>bLHHLkKnDLtTR5q2Iw7z3WfuLDc=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate1443743">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>FsMPLVN/BZRY7tYSjNM9svwSpA4=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-803249" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>sC4ys0GsFOrJsMwSSQUBPRPSLvA=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="SignatureValue117016">
+emX5e++jq4h7BsniqbTVIZGl31N/UkWipGBQaHwQtSh9jeqD+woUNPNdQ3DLQf9woqAlKD8gbWmA
+HG0ozzCKR28MfoDMdvS7kAAvYHoRWvpOLnAD4FMf/T5mzC4J50ThdVxOmp3uj4E1Q5nS0i58VFnJ
+MxGTQ/7oRNn0xLo2/HIofFFVojEiUCjh07bvY4GaeaH+K1JrYqkGgtz+cEmdGSTbOEeLxbw3WZto
+rYXFNB69jJmNo+OExkSZ96PiLAdwVL/NfpkZkPfIh9jlePwevej6YK1PPfk8flnOF8GGrzozmjyN
+ZPMRHfDSKVX73Npj6w0MlEeAphnOkzCiUpNepg==
+</ds:SignatureValue>
+<ds:KeyInfo Id="Certificate1443743">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIJ2DCCCMCgAwIBAgIEVNPnmzANBgkqhkiG9w0BAQsFADCBkzELMAkGA1UEBhMCRUMxGzAZBgNV
+BAoTElNFQ1VSSVRZIERBVEEgUy5BLjEwMC4GA1UECxMnRU5USURBRCBERSBDRVJUSUZJQ0FDSU9O
+IERFIElORk9STUFDSU9OMTUwMwYDVQQDEyxBVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUIg
+U0VDVVJJVFkgREFUQTAeFw0xOTAxMjUxNzMxMjBaFw0yNDAxMjUxODAxMjBaMIGaMQswCQYDVQQG
+EwJFQzEbMBkGA1UEChMSU0VDVVJJVFkgREFUQSBTLkEuMTAwLgYDVQQLEydFTlRJREFEIERFIENF
+UlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04xPDATBgNVBAUTDDI1MDExOTEyNTgyMDAlBgNVBAMT
+HktFTExZIEFMRVhBTkRSQSBRVUVWRURPIEFTQU5aQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBANgWiAP81RRdvbrQc+kXj7Z/dbIqBq6hD0vpJT6aZ5N7WmQ74xH15N2R7wIovpqAH1r3
+r+S2CY0okB2UED9R1jnBVT8eT4ykBXvl/Mcd+xjkswJAgElAkVg7syb479InaS/U8p59pZaftu4x
+exxI5LKte/WfeAwXcdWnAHncr3ilBFg8A+2MhNel4joSYD7q9SaPf6MLUjDYvoS7ulBJAofThBDd
+6gCZURSizChOnfy5sZ9vi3zwojb3+9ByLVbBqzU/tkkpSqc0Y0m5sTrGndivJRp/6GMZQXFENVyl
+Xt0+UD0Yki4HdP38nHhn4soix/b7vEgZEFnJ71yIkkMpYDMCAwEAAaOCBikwggYlMAsGA1UdDwQE
+AwIF4DBZBggrBgEFBQcBAQRNMEswSQYIKwYBBQUHMAGGPWh0dHA6Ly9vY3NwZ3cuc2VjdXJpdHlk
+YXRhLm5ldC5lYy9lamJjYS9wdWJsaWN3ZWIvc3RhdHVzL29jc3AwgcwGA1UdIASBxDCBwTBABgor
+BgEEAYKmcgIJMDIwMAYIKwYBBQUHAgIwJBoiQ2VydGlmaWNhZG8gZGUgUmVwcmVzZW50YW50ZSBM
+ZWdhbDB9BgorBgEEAYKmcgIDMG8wbQYIKwYBBQUHAgEWYWh0dHBzOi8vd3d3LnNlY3VyaXR5ZGF0
+YS5uZXQuZWMvbGV5ZXNfbm9ybWF0aXZhcy9Qb2xpdGljYXMgZGUgQ2VydGlmaWNhZG8gUmVwcmVz
+ZW50YW50ZSBMZWdhbC5wZGYwRgYKKwYBBAGCpnIDCgQ4EzZQUk9ZRUNUT1MgWSBDT05TVFJVQ0NJ
+T05FUyBRVUVWRURPIENPTlNUUlVRVUVWRURPIFMuQS4wHQYKKwYBBAGCpnIDCwQPEw0wOTkzMDU4
+Mzc4MDAxMBoGCisGAQQBgqZyAwEEDBMKMDkxOTM3MjQ3NDAfBgorBgEEAYKmcgMCBBETD0tFTExZ
+IEFMRVhBTkRSQTAXBgorBgEEAYKmcgMDBAkTB1FVRVZFRE8wFgYKKwYBBAGCpnIDBAQIEwZBU0FO
+WkEwHwYKKwYBBAGCpnIDBQQREw9HRVJFTlRFIEdFTkVSQUwwNAYKKwYBBAGCpnIDBwQmEyQgVkFM
+UEFSQUlTTyAxMDAgWSBMQSBIQUJBTkEgLSBNRVhJQ08wHAYKKwYBBAGCpnIDCAQOEww1OTM5OTc4
+NDQwNTQwGQYKKwYBBAGCpnIDCQQLEwlHVUFZQVFVSUwwFwYKKwYBBAGCpnIDDAQJEwdFQ1VBRE9S
+MB8GCisGAQQBgqZyAyAEERMPMDAxMDAyMDAwMDIyODMwMBMGCisGAQQBgqZyAyEEBRMDUEZYMCYG
+A1UdEQQfMB2BG2NvbnN0cnVfcXVldmVkb0Bob3RtYWlsLmNvbTCCAnsGA1UdHwSCAnIwggJuMIIC
+aqCCAmagggJihj1odHRwOi8vb2NzcGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpiY2EvcHVibGlj
+d2ViL3N0YXR1cy9vY3NwhoHVbGRhcDovL2RpcmVjdC5zZWN1cml0eWRhdGEubmV0LmVjL2NuPUNS
+TDMzNSxjbj1BVVRPUklEQUQlMjBERSUyMENFUlRJRklDQUNJT04lMjBTVUIlMjBTRUNVUklUWSUy
+MERBVEEsb3U9RU5USURBRCUyMERFJTIwQ0VSVElGSUNBQ0lPTiUyMERFJTIwSU5GT1JNQUNJT04s
+bz1TRUNVUklUWSUyMERBVEElMjBTLkEuLGM9RUM/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9i
+YXNlhoGeaHR0cHM6Ly9kaXJlY3Quc2VjdXJpdHlkYXRhLm5ldC5lYy9+Y3JsL2F1dG9yaWRhZF9k
+ZV9jZXJ0aWZpY2FjaW9uX3N1Yl9zZWN1cml0eV9kYXRhX2VudGlkYWRfZGVfY2VydGlmaWNhY2lv
+bl9kZV9pbmZvcm1hY2lvbl9jdXJpdHlfZGF0YV9zLmEuX2NfZWNfY3JsZmlsZS5jcmykgacwgaQx
+CzAJBgNVBAYTAkVDMRswGQYDVQQKExJTRUNVUklUWSBEQVRBIFMuQS4xMDAuBgNVBAsTJ0VOVElE
+QUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjE1MDMGA1UEAxMsQVVUT1JJREFEIERF
+IENFUlRJRklDQUNJT04gU1VCIFNFQ1VSSVRZIERBVEExDzANBgNVBAMTBkNSTDMzNTArBgNVHRAE
+JDAigA8yMDE5MDEyNTE3MzEyMFqBDzIwMjQwMTI1MTgwMTIwWjAfBgNVHSMEGDAWgBT3L0zgdedi
+o3iWWwa2LnE7zGw/kDAdBgNVHQ4EFgQUrssRkpxRMF1tcfjlf7NIgD1TfEMwCQYDVR0TBAIwADAZ
+BgkqhkiG9n0HQQAEDDAKGwRWOC4xAwIDqDANBgkqhkiG9w0BAQsFAAOCAQEAOJUVhJtCQQehXMiD
+WRfL46dHa1ZPSI8J3nLauhis6GRnwjVKew3ApFETruye0MHXuwn96NX4FFxQVTvjWNMmQN9RYq08
+bs2QWs+wqk/CTfPWm0cKhp2AOLkJjiGObYXMsg5pZYNPX1WV489+elhna3GE8/wHnWjxTcsxTook
+FFNpOa68Tjyd70FDiAkBe00Rc9jxbvlwDDVUbpc9I6NFHwG4/7NYG1yPKoUk78+fJjRQqpjx5Erp
+jQT+4GQ3U5W1/i7vgHmaeQCsGp1JRLDKq6F6GscUn56lhBKrn6X/0DQQbi7gxeP29DE0z1YbEYHl
+FOXE7g+OO5sDLGlzlxxuww==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+2BaIA/zVFF29utBz6RePtn91sioGrqEPS+klPppnk3taZDvjEfXk3ZHvAii+moAfWvev5LYJjSiQ
+HZQQP1HWOcFVPx5PjKQFe+X8xx37GOSzAkCASUCRWDuzJvjv0idpL9Tynn2llp+27jF7HEjksq17
+9Z94DBdx1acAedyveKUEWDwD7YyE16XiOhJgPur1Jo9/owtSMNi+hLu6UEkCh9OEEN3qAJlRFKLM
+KE6d/Lmxn2+LfPCiNvf70HItVsGrNT+2SSlKpzRjSbmxOsad2K8lGn/oYxlBcUQ1XKVe3T5QPRiS
+Lgd0/fyceGfiyiLH9vu8SBkQWcnvXIiSQylgMw==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+<ds:Object Id="Signature7982-Object938899"><etsi:QualifyingProperties Target="#Signature7982"><etsi:SignedProperties Id="Signature7982-SignedProperties310523"><etsi:SignedSignatureProperties><etsi:SigningTime>2020-01-06T15:52:57-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>7ns80qeaTjafHxsVNzN26VOHCX0=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUB SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A.,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1423173531</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></comprobanteRetencion>]]></comprobante>
+<mensajes/>
+</autorizacion>
+

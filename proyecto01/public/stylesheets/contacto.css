@@ -16,3 +16,14 @@
     font-weight:700;
   }
 
+  @media screen and (max-width: 800px) {
+    .contacto{
+      display: flex;
+      flex-direction: column;
+    
+    }    
+    .contacto contact__map {
+      width: 85%;
+      
+    }
+    }
