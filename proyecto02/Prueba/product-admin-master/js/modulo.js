@@ -3,34 +3,57 @@ import data from '../json/resultado.json' assert {type: 'json'};
 const width_threshold = 480;
 var totalretenciones = [];
 var a = 0;
+var ultiteración = data.length;
+console.log(ultiteración);
+
+var dict = {};
+dict['Enero'] = [];
+dict['Febrero'] = [];
+dict['Marzo'] = [];
+dict['Abril'] = [];
+dict['Mayo'] = [];
+dict['Junio'] = [];
+dict['Julio'] = [];
+dict['Agosto'] = [];
+dict['Septiembre'] = [];
+dict['Octubre'] = [];
+dict['Noviembre'] = [];
+dict['Diciembre'] = [];
+
+
 //INICIALIZANDO EL ENCABEZADO
 //document.getElementById("demo").innerHTML += "<tr><th>ESTADO</th><th>numeroAutorizacion</th><th>fechaAutorizacion</th><th>ambiente</th></tr>";
 
 data.forEach(element => {
-    var re = /\\/gi;
-    var str = element.path;
-    var newstr = str.replace(re, "/");
-    var a = 0;
-    //CargarDatos("./"+newstr);    
     
-    CargarDatos(newstr);    
+    var re = /\\/gi;
+    if(!element.isDirectory){
+      var str = element.path;
+      var newstr = str.replace(re, "/");
+    CargarDatos(newstr); 
+    }
     
 });
 
-drawLineChart();    
-drawBarChart();     //BARRAS
-drawPieChart();     //PASTEL
-updateLineChart();
-updateBarChart();
 
+var y = 0;
+var datos= [];
+var dataSeries = { type: "line" };
+var dataPoints = [];
+
+
+
+
+
+drawLineChart3();
 
 function CargarDatos(ruta){
   var xhr = new XMLHttpRequest();
-  
-  xhr.onreadystatechange = function(){
+  //por cada cambio de estado se ejecutara la siguiente función
+  xhr.onreadystatechange = function(){  //funcion anónima 
       if(this.readyState ==4 && this.status == 200){
           cargarXML(this);
-      }
+      }      
   };
    xhr.open("GET", ruta, true);
    xhr.send();
@@ -47,7 +70,7 @@ function cargarXML(xml){
   
   
 
-  for(var i = 0; i<factura.length; i++){
+  for(let i = 0; i<factura.length; i++){
       tabla += "<tr><td>";
       //CONDICIÓN PARA EL COLOR DEL ESTADO
       /**
@@ -56,14 +79,6 @@ function cargarXML(xml){
       }else{
         tabla += '<div class="tm-status-circle cancelled"></div>';
       }  */
-
-      //tabla += factura[i].getElementsByTagName("estado")[0].textContent;
-      //tabla += "</td><td>";
-      //tabla += factura[i].getElementsByTagName("numeroAutorizacion")[0].textContent;
-      //tabla += "</td><td>";
-      //tabla += factura[i].getElementsByTagName("fechaAutorizacion")[0].textContent;
-      //tabla += "</td><td>";   
-
       var cot = factura2[i].textContent; //string
       //con reemplazo eliminamos la parte del xml que nos da problemas al momento de identificar los tag 
       //esta parte del codigo esta en los xml debido a que dentro de ellos se quiere agregar caracteres como la "ñ" entre otros
@@ -106,7 +121,7 @@ function cargarXML(xml){
         valr1 = parseFloat(xmlcomprobante.getElementsByTagName("valorRetenido")[0].textContent);
         valr2 = parseFloat(xmlcomprobante.getElementsByTagName("valorRetenido")[1].textContent);
 
-        //TOTAL RETENCIÓN
+        //TOTAL RETENCIÓN 
         totalretenciones[a] = (valr1+valr2).toFixed(2); //redonde a dos decimales 
         //totalretenciones.push((valr1+valr2).toFixed(2)); //redonde a dos decimales 
         
@@ -131,15 +146,98 @@ function cargarXML(xml){
       tabla += "</td><td>";
       
       tabla += totalretenciones[a];
-      
       tabla += "</td></tr>";
-      
-      a=a + 1;
-      console.log(totalretenciones[a]);
-  }  
-  
-  document.getElementById("demo2").innerHTML += tabla;
 
+      var fecha1 = (xmlcomprobante.getElementsByTagName("fechaEmision")[0].textContent.split('/'));                  
+      let mes = calmes( parseInt(fecha1[1]-1));
+      let diccionarito = {};
+      diccionarito['x'] = new Date(fecha1[2], fecha1[1]-1, fecha1[0]);
+      diccionarito['y'] = parseFloat(totalretenciones[a]);
+      dict[mes].push(diccionarito);
+      /**
+      y = parseFloat(totalretenciones[a]);
+      dataPoints.push({x: a - 53 / 2,y: y});
+      
+      dataSeries.dataPoints = dataPoints;
+      datos.push(dataSeries);*/
+
+      a=a + 1;
+  }
+  if(a == ultiteración){    
+    
+    prub1(dict);
+  }
+  
+  
+  document.getElementById("demo2").innerHTML += tabla; 
+}
+
+function sumrepet(myArray){
+  var tempArray = [];
+  var tam = myArray.length;
+  const unicos = [];
+  for( var i = 0; i<tam; i++){
+    const elemento = myArray[i]['x']; //sat 04 2020 
+
+    if(!unicos.includes(myArray[i]['x'].getDate()) ){
+      unicos.push(elemento.getDate());
+      tempArray.push(myArray[i]);
+    }else{
+      var indice = unicos.indexOf(elemento.getDate()); //indice de la primera aparición del día
+      tempArray[indice]['y'] += myArray[i]['y'];
+    }
+  }
+  
+  return tempArray;
+}
+
+function burburja (myArray){ 
+  var tam = myArray.length; 
+  for ( var temp =1; temp < tam; temp++) { 
+    for (var izq = 0; izq< (tam - temp); izq++) { 
+      var dcha = izq+1;
+      if (myArray[izq]['x'].getDate() > myArray[dcha]['x'].getDate()) { 
+        ordenar(myArray, izq, dcha); 
+      } 
+    } 
+    }return myArray;}
+
+function ordenar(myArray, valor1, valor2){ 
+  var temp = myArray[valor1]; 
+  myArray[valor1] = myArray[valor2]; 
+  myArray[valor2] = temp; 
+  return myArray;
+}
+
+
+
+function calmes(num){
+  switch(num){
+    case 0:
+      return "Enero";
+    case 1:
+      return "Febrero";
+    case 2:
+      return "Marzo";
+    case 3:
+      return "Abril";
+    case 4:
+      return "Mayo";
+    case 5:
+      return "Junio";
+    case 6:
+      return "Julio";
+    case 7:
+      return "Agosto";
+    case 8:
+      return "Septiembre";
+    case 9:
+      return "Octubre";
+    case 10:
+      return "Noviembre";
+    case 11:
+      return "Diciembre";
+  }
 }
 
 
@@ -193,6 +291,14 @@ function tabla20SRI(id){
 
 }
 
+//PROMEDIO ARRAY
+function promdArray(myArray) {
+  var i = 0, summ = 0, ArrayLen = myArray.length;
+  while (i < ArrayLen) {
+      summ = summ + myArray[i++];
+}
+  return summ / ArrayLen;
+}
 
 
 
@@ -211,25 +317,60 @@ function StringToXML(oString) {
  }
 
 
+ function prub1(inputdic){
+    /**
+    let arrmeses = [];
+    for(var key in inputdic){
+        arrmeses.push(inputdic[key]);
+    }
+    console.log(dictionar); */
 
-
-
-function drawLineChart() {
-    console.log(totalretenciones);
-    
+  var chart = new CanvasJS.Chart("lineChart", {
+    animationEnabled: true,
+    title:{
+      text: "Website Traffic"
+    },
+    axisX:{
+      valueFormatString: "DD MMM"
+    },
+    axisY: {
+      title: "Number of Visitors",
+      scaleBreaks: {
+        autoCalculate: true
+      }
+    },
+    data: [{
+      type: "line",
+      xValueFormatString: "DD MMM",
+      color: "#F08080",
+      dataPoints:  sumrepet(burburja(dict['Junio']))
+      /**[
+        { x: new Date(2017, 0, 29), y: 890 },
+        { x: new Date(2017, 0, 30), y: 930 },
+        { x: new Date(2017, 0, 31), y: 750 }
+      ]*/
+    }]
+  });
+  chart.render();
   
+  }
+
+
+
+function drawLineChart2() {   
     if ($("#lineChart").length) {
       ctxLine = document.getElementById("lineChart").getContext("2d");
       optionsLine = {
         scales: {
           yAxes: [
-            {
+            { 
               scaleLabel: {
                 display: true,
                 labelString: "Hits"
               }
             }
           ]
+
         }
       };
   
@@ -239,13 +380,10 @@ function drawLineChart() {
   
       configLine = {
         type: "line",
+        
         data: {
           labels: [
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo"
+            "Enero"
           ],
           datasets: [
             /*
@@ -267,7 +405,7 @@ function drawLineChart() {
             },**/
             {
               label: "Comprobante Rent.",
-              data:[33, 45, 37, 21, 55, 74, 69],
+              data:[0.32, 1.73, 0.33, 4.10, 1.23, 5.03, 12.31, 0.32, 2.13, 2.06, 15.04, 1.65, 9.00, 16.43, 5.34, 13.74, 1.30, 0.27, 1.40, 18.16, 0.67, 1.50, 4.10, 20.76, 0.61, 0.37, 15.04, 0.63, 28.54, 1.97, 1.80, 0.18, 2.24, 0.37, 32.60, 0.33, 1.23, 2.99, 6.63, 0.79, 1.15, 1.95, 3.90, 45.86, 2.63, 7.41, 1.02, 0.62, 1.47, 19.10, 1.90, 2.94, 0.65],
               fill: false,
               borderColor: "rgba(153, 102, 255, 1)",
               cubicInterpolationMode: "monotone",
@@ -281,130 +419,19 @@ function drawLineChart() {
       lineChart = new Chart(ctxLine, configLine);
     }
   }
-  
-  function drawBarChart() {
-    if ($("#barChart").length) {
-      ctxBar = document.getElementById("barChart").getContext("2d");
-  
-      optionsBar = {
-        responsive: true,
-        scales: {
-          yAxes: [
-            {
-              barPercentage: 0.2,
-              ticks: {
-                beginAtZero: true
-              },
-              scaleLabel: {
-                display: true,
-                labelString: "Hits"
-              }
-            }
-          ]
-        }
-      };
-  
-      optionsBar.maintainAspectRatio =
-        $(window).width() < width_threshold ? false : true;
-  
-      /**
-       * COLOR CODES
-       * Red: #F7604D
-       * Aqua: #4ED6B8
-       * Green: #A8D582
-       * Yellow: #D7D768
-       * Purple: #9D66CC
-       * Orange: #DB9C3F
-       * Blue: #3889FC
-       */
-  
-      configBar = {
-        type: "horizontalBar",
-        data: {
-          labels: ["Red", "Aqua", "Green", "Yellow", "Purple", "Orange", "Blue"],
-          datasets: [
-            {
-              label: "# of Hits",
-              data: [33, 40, 28, 49, 58, 38, 44],
-              backgroundColor: [
-                "#F7604D",
-                "#4ED6B8",
-                "#A8D582",
-                "#D7D768",
-                "#9D66CC",
-                "#DB9C3F",
-                "#3889FC"
-              ],
-              borderWidth: 0
-            }
-          ]
-        },
-        options: optionsBar
-      };
-  
-      barChart = new Chart(ctxBar, configBar);
-    }
+
+
+function drawLineChart3(datos){   
+    var chart = new CanvasJS.Chart("lineChart", {
+    animationEnabled: true,
+    zoomEnabled: true,
+    title:{
+      text: "Try Zooming and Panning" 
+    },
+    data: datos // random generator below
+  });
+  chart.render();
+
     
-  }
-  
-  function drawPieChart() {
-    if ($("#pieChart").length) {
-      var chartHeight = 300;
-  
-      $("#pieChartContainer").css("height", chartHeight + "px");
-  
-      ctxPie = document.getElementById("pieChart").getContext("2d");
-  
-      optionsPie = {
-        responsive: true,
-        maintainAspectRatio: false,
-        layout: {
-          padding: {
-            left: 10,
-            right: 10,
-            top: 10,
-            bottom: 10
-          }
-        },
-        legend: {
-          position: "top"
-        }
-      };
-  
-      configPie = {
-        type: "pie",
-        data: {
-          datasets: [
-            {
-              data: [13.24, 11.5, 9.15],
-              backgroundColor: ["#F7604D", "#4ED6B8", "#A8D582"],
-              label: "Storage"
-            }
-          ],
-          labels: [
-            "Used Storage (18.240GB)",
-            "System Storage (6.500GB)",
-            "Available Storage (9.150GB)"
-          ]
-        },
-        options: optionsPie
-      };
-  
-      pieChart = new Chart(ctxPie, configPie);
-    }
-  }
-  
-  function updateLineChart() {
-    if (lineChart) {
-      lineChart.options = optionsLine;
-      lineChart.update();
-    }
-  }
-  
-  function updateBarChart() {
-    if (barChart) {
-      barChart.options = optionsBar;
-      barChart.update();
-    }
-  }
-  
+}
+

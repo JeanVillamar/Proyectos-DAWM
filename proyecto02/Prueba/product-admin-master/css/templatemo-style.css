@@ -67,11 +67,12 @@ button:focus {
   padding: 40px;
   -webkit-box-shadow: 1px 1px 5px 0 #455c71;
   -moz-box-shadow: 1px 1px 5px 0 #455c71;
-  box-shadow: 1px 1px 5px 0 #715e45;
+  box-shadow: 1px 1px 5px 0 #547145;
   min-height: 350px;
   height: 100%;
-  max-height: 450px;
+  max-height: 800px;
 }
+
 
 #gbarras .tm-block{
   max-height: 650px;

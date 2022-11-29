@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<autorizacion>
+<estado>AUTORIZADO</estado>
+<numeroAutorizacion>1806202007019014814900120021000000047280006346618</numeroAutorizacion>
+<fechaAutorizacion>2020-06-22T23:46:28-05:00</fechaAutorizacion>
+<ambiente>PRODUCCIÓN</ambiente>
+<comprobante><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<comprobanteRetencion id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>2</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>CARTORAMA C.A.</razonSocial>
+        <nombreComercial>CARTORAMA C.A.</nombreComercial>
+        <ruc>0190148149001</ruc>
+        <claveAcceso>1806202007019014814900120021000000047280006346618</claveAcceso>
+        <codDoc>07</codDoc>
+        <estab>002</estab>
+        <ptoEmi>100</ptoEmi>
+        <secuencial>000004728</secuencial>
+        <dirMatriz>HEROES DE VERDELOMA S/N Y PADRE AGUIRRE</dirMatriz>
+    </infoTributaria>
+    <infoCompRetencion>
+        <fechaEmision>18/06/2020</fechaEmision>
+        <dirEstablecimiento>GIL RAMIREZ DAVALOS</dirEstablecimiento>
+        <contribuyenteEspecial>195</contribuyenteEspecial>
+        <obligadoContabilidad>SI</obligadoContabilidad>
+        <tipoIdentificacionSujetoRetenido>04</tipoIdentificacionSujetoRetenido>
+        <razonSocialSujetoRetenido>VALLE VILLAMAR STEPHANIE MARLEN</razonSocialSujetoRetenido>
+        <identificacionSujetoRetenido>0930293725001</identificacionSujetoRetenido>
+        <periodoFiscal>06/2020</periodoFiscal>
+    </infoCompRetencion>
+    <impuestos>
+        <impuesto>
+            <codigo>1</codigo>
+            <codigoRetencion>312</codigoRetencion>
+            <baseImponible>28.12</baseImponible>
+            <porcentajeRetener>1.75</porcentajeRetener>
+            <valorRetenido>0.49</valorRetenido>
+            <codDocSustento>01</codDocSustento>
+            <numDocSustento>002001000012286</numDocSustento>
+            <fechaEmisionDocSustento>18/06/2020</fechaEmisionDocSustento>
+        </impuesto>
+        <impuesto>
+            <codigo>2</codigo>
+            <codigoRetencion>1</codigoRetencion>
+            <baseImponible>3.38</baseImponible>
+            <porcentajeRetener>30.00</porcentajeRetener>
+            <valorRetenido>1.01</valorRetenido>
+            <codDocSustento>01</codDocSustento>
+            <numDocSustento>002001000012286</numDocSustento>
+            <fechaEmisionDocSustento>18/06/2020</fechaEmisionDocSustento>
+        </impuesto>
+    </impuestos>
+    <infoAdicional>
+        <campoAdicional nombre="Cliente:">VALLE VILLAMAR STEPHANIE MARLEN</campoAdicional>
+        <campoAdicional nombre="Direccion:">PEDRO PABLO GOMES 520 Y MACHALA</campoAdicional>
+        <campoAdicional nombre="Telefono:">2403043</campoAdicional>
+        <campoAdicional nombre="Ciudad:">GUAYAQUIL</campoAdicional>
+        <campoAdicional nombre="Correo electronico:">steffy-002@hotmail.com</campoAdicional>
+        <campoAdicional nombre="Documento Sistema:">DF-06080</campoAdicional>
+        <campoAdicional nombre="Total Retenido:">1.50</campoAdicional>
+    </infoAdicional>
+<ds:Signature Id="Signature232451" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#">
+<ds:SignedInfo Id="Signature-SignedInfo759968">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference Id="SignedPropertiesID806335" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature232451-SignedProperties968224">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>EOseD5jRDWzHJFO+3EAZeDfbc2o=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate1274848">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>xyGYUwPeikjKPzIpW3vzncePJj8=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-1014836" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>VU8HELaXJsTA5hTT4E+/NCkew4s=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="SignatureValue128628">
+bPW9+PcepNLmnZ7aW9+OHYhI6j5vfODS611rNy6ML1K0F9cgS8qvyx8tCuzMlfX198ViiC0hO2v1
+XmBzsGjVX2gAK6SxesHzF5vBCgIxzvjaLTnCU3khW3QYNkjyNyx1DmSIMga/IaZom2sIY0fcj7cD
+Jpr9w3lkbb/UqS0/p2Nm8XlDcIaqaQ4SC79rNFSo/TOL5BfwL1nJg+66+fPlaibLdLYWZMFUNtGo
+pNZWpLc3RVInKuIf/C5mX0yxCvIdbP+H5f7xCM/GdcGmhlQAkgavHdmwTiI3p6YCiUSOsVMhEBg7
+yyLCgVIqVCyFeySj+b58jwF7S4AAx0N5XfieEQ==
+</ds:SignatureValue>
+<ds:KeyInfo Id="Certificate1274848">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIJ4DCCB8igAwIBAgIEW2GQJjANBgkqhkiG9w0BAQsFADCBoTELMAkGA1UEBhMCRUMxIjAgBgNV
+BAoTGUJBTkNPIENFTlRSQUwgREVMIEVDVUFET1IxNzA1BgNVBAsTLkVOVElEQUQgREUgQ0VSVElG
+SUNBQ0lPTiBERSBJTkZPUk1BQ0lPTi1FQ0lCQ0UxDjAMBgNVBAcTBVFVSVRPMSUwIwYDVQQDExxB
+QyBCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMB4XDTE5MTEwNzE2MDMyNloXDTIxMTEwNzE2MzMy
+NlowgbExCzAJBgNVBAYTAkVDMSIwIAYDVQQKExlCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMTcw
+NQYDVQQLEy5FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04tRUNJQkNFMQ4w
+DAYDVQQHEwVRVUlUTzE1MBEGA1UEBRMKMDAwMDQxNTYzNzAgBgNVBAMTGUpPUkdFIE1BVVJJQ0lP
+IEFCQUQgQ0FMTEUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVdzW2DkuztmcTz6jD
+DTUWAzz1TVOr6Im6JJq94dbHm+Amj//2RTNPlfM2L799FmjPGmcedTHj+uD8PKdWVpRW1LZxjp4a
+qeQ2ljNAMCnFimIvB5+yjUrD1zKBdL6plSBtjGDf37d1keo9R89lq/ribNTKBZTX7l9EyL9OARN1
+Vnsfl+3ZXW6wlZ8B6uJFVRw4W8yluP1aPvqJjCNt2AjIAowUypH1kKS9QXpjuAiCUNGdr/1EBPJ0
+WD5rVm3ZFxcVdKLNic0ROgYKR8A5Nf+6pyXZhODEjQJ2PqLelZ18pGicaJhnd6tDKL7pRD8/PdD7
+u4wYr0QtVF+dq9Z2evcbAgMBAAGjggUMMIIFCDALBgNVHQ8EBAMCB4AwZwYDVR0gBGAwXjBcBgsr
+BgEEAYKoOwICATBNMEsGCCsGAQUFBwIBFj9odHRwOi8vd3d3LmVjaS5iY2UuZWMvcG9saXRpY2Et
+Y2VydGlmaWNhZG8vcGVyc29uYS1qdXJpZGljYS5wZGYwgZEGCCsGAQUFBwEBBIGEMIGBMD4GCCsG
+AQUFBzABhjJodHRwOi8vb2NzcC5lY2kuYmNlLmVjL2VqYmNhL3B1YmxpY3dlYi9zdGF0dXMvb2Nz
+cDA/BggrBgEFBQcwAYYzaHR0cDovL29jc3AxLmVjaS5iY2UuZWMvZWpiY2EvcHVibGljd2ViL3N0
+YXR1cy9vY3NwMBwGCisGAQQBgqg7AwoEDhMMQ0FSVE9SQU1BIENBMB0GCisGAQQBgqg7AwsEDxMN
+MDE5MDE0ODE0OTAwMTAaBgorBgEEAYKoOwMBBAwTCjAxMDI1NzQ2MDUwHgYKKwYBBAGCqDsDAgQQ
+Ew5KT1JHRSBNQVVSSUNJTzAUBgorBgEEAYKoOwMDBAYTBEFCQUQwFQYKKwYBBAGCqDsDBAQHEwVD
+QUxMRTAgBgorBgEEAYKoOwMFBBITEENPTlRBRE9SIEdFTkVSQUwwIAYKKwYBBAGCqDsDBwQSExBW
+SUEgREFVTEUgS00gMTQ1MBkGCisGAQQBgqg7AwgECxMJMDQyMTYwMTg0MBkGCisGAQQBgqg7AwkE
+CxMJR3VheWFxdWlsMBcGCisGAQQBgqg7AwwECRMHRUNVQURPUjAgBgorBgEEAYKoOwMzBBITEFNP
+RlRXQVJFLUFSQ0hJVk8wKwYDVR0RBCQwIoEgY29udGFkb3JnZW5lcmFsQGNhcnRvcmFtYS5jb20u
+ZWMwggHfBgNVHR8EggHWMIIB0jCCAc6gggHKoIIBxoaB1WxkYXA6Ly9iY2VxbGRhcHN1YnAxLmJj
+ZS5lYy9jbj1DUkw4NjcsY249QUMlMjBCQU5DTyUyMENFTlRSQUwlMjBERUwlMjBFQ1VBRE9SLGw9
+UVVJVE8sb3U9RU5USURBRCUyMERFJTIwQ0VSVElGSUNBQ0lPTiUyMERFJTIwSU5GT1JNQUNJT04t
+RUNJQkNFLG89QkFOQ08lMjBDRU5UUkFMJTIwREVMJTIwRUNVQURPUixjPUVDP2NlcnRpZmljYXRl
+UmV2b2NhdGlvbkxpc3Q/YmFzZYY0aHR0cDovL3d3dy5lY2kuYmNlLmVjL0NSTC9lY2lfYmNlX2Vj
+X2NybGZpbGVjb21iLmNybKSBtTCBsjELMAkGA1UEBhMCRUMxIjAgBgNVBAoTGUJBTkNPIENFTlRS
+QUwgREVMIEVDVUFET1IxNzA1BgNVBAsTLkVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZP
+Uk1BQ0lPTi1FQ0lCQ0UxDjAMBgNVBAcTBVFVSVRPMSUwIwYDVQQDExxBQyBCQU5DTyBDRU5UUkFM
+IERFTCBFQ1VBRE9SMQ8wDQYDVQQDEwZDUkw4NjcwKwYDVR0QBCQwIoAPMjAxOTExMDcxNjAzMjZa
+gQ8yMDIxMTEwNzE2MzMyNlowHwYDVR0jBBgwFoAUSKLfIx8d+CxReowDzUkypQnBlKswHQYDVR0O
+BBYEFNmlFvsk8iVvg0gGvaBoGjVDB20IMAkGA1UdEwQCMAAwGQYJKoZIhvZ9B0EABAwwChsEVjgu
+MQMCBLAwDQYJKoZIhvcNAQELBQADggIBAFGr03IdYsfhS4bZrvTNPENVPYMHiiWqTswtWveQWUJv
+wqbqXWWmwuRHcawZUEexSrW1WPGU/nsQ9gsoxscjtbiO0FkO1I9giz5nYnQQVSpeU61Qkp5Y6/ey
+O+y6BfW7MRKc7Zk/qdToavI+D5r2Nv6wGdvDOXVoGj6p4LCKW/xC4VA+N+RR6okoR62dodK7jSku
+sZ3fBDX6ktuKzTvOSs6Ruw0w75LCJCYMtzFrwJT6x/Ub0AZWN/EXShTXoaw/pi1JlFJhWKwnbiSb
+N1bUJUAQMG2P7NnELCQD1TPtIeLksLIFJlHSKqO1xZg3lS4mWQj0lNXZcFlVJr249GGFIiF/+Vny
+8stYM10yFA8X3xCcgW9xivGMMDj4uQ+cJGtVGI1ZjnqKjcxyo02wK5e2G/GUB6Alzq8J8aSqQ6IE
+QBqGfz0x7OL7w/1np4pDHy4u9LSVGk6FMj/xpoFPzRXNrmeTkntiiVkoJQd4iw3Fq9HL4GaiCf6Q
+nZ/M6sh0zSBiGv9osCLwEERCrAXy1sbWsGIKcIaT38qSkBI3T8zhBCRVJPHS9erF2/UztWG6aU1X
+YcfunZ01U/zbUOUK47vWEcU5s8syuzrfgIXx6ghGk5vtEPzFj5k/7d13tortN3J7dGjR/pKUwNTP
+J9ZiKq5E3JOrsYNr1rfqFfj1Aaq742Ia
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+1Xc1tg5Ls7ZnE8+oww01FgM89U1Tq+iJuiSaveHWx5vgJo//9kUzT5XzNi+/fRZozxpnHnUx4/rg
+/DynVlaUVtS2cY6eGqnkNpYzQDApxYpiLwefso1Kw9cygXS+qZUgbYxg39+3dZHqPUfPZav64mzU
+ygWU1+5fRMi/TgETdVZ7H5ft2V1usJWfAeriRVUcOFvMpbj9Wj76iYwjbdgIyAKMFMqR9ZCkvUF6
+Y7gIglDRna/9RATydFg+a1Zt2RcXFXSizYnNEToGCkfAOTX/uqcl2YTgxI0Cdj6i3pWdfKRonGiY
+Z3erQyi+6UQ/Pz3Q+7uMGK9ELVRfnavWdnr3Gw==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+<ds:Object Id="Signature232451-Object359450"><etsi:QualifyingProperties Target="#Signature232451"><etsi:SignedProperties Id="Signature232451-SignedProperties968224"><etsi:SignedSignatureProperties><etsi:SigningTime>2020-06-22T23:42:51-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>wbUaPOegMk03UygaycjaOG7HnSA=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1533120550</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-1014836"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></comprobanteRetencion>]]></comprobante>
+<mensajes/>
+</autorizacion>
+

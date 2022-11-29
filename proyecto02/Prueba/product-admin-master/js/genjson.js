@@ -16,23 +16,32 @@ function scanDirs(directoryPath){
             dataFile =fs.lstatSync(file);
          }catch(e){}
 
-         if(dataFile){
-            data.push(
-               {
-                  path: file,
-                  isDirectory: dataFile.isDirectory(),
-                  length: dataFile.size
-               });
+         if(dataFile ){
+            /**EN CASO QUE SE DESEE OBTENER TAMBIEN LAS CARPETAS: DESCOMENTAR EL SIGUIENTE CÓDIGO ADEMÁS DE ELIMAR EL ELSE               
+             * data.push(
+                  {
+                     path: file,
+                     isDirectory: dataFile.isDirectory(),
+                     length: dataFile.size
+                  });
+             */
 
             if(dataFile.isDirectory()){
                scanDirs(file)
+            }else{
+               data.push(
+                  {
+                     path: file,
+                     isDirectory: dataFile.isDirectory(),
+                     length: dataFile.size
+                  });
             }
          }
       }
    }catch(e){}
 }
 
-scanDirs("./xml/2022/Enero");
+scanDirs("./xml/2022");
 
 
 const jsonString = JSON.stringify(data);
