@@ -1,7 +1,8 @@
 export interface Foto {
     
-    id: String;
-    descripcion: String;
-    url: String;
+
+    name: string;
+    id: string;
+    img_url: string;
 
 }

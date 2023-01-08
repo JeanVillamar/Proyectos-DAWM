@@ -9,13 +9,14 @@ import { Foto } from './interfaz/foto';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyect3';
-  fotos: Foto[] = [];  
+  title = 'clienteAngular';
+  fotos:Foto[] = [];
 
   constructor(private recursosService: RecursosService) {
     	
-    recursosService.obtenerDatos().subscribe(respuesta => {
+    recursosService.obtenerDatos().subscribe(respuesta => {     
       this.fotos = respuesta as Array<Foto>
+
     })
   }
 

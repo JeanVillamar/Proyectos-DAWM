@@ -9,10 +9,10 @@ export class RecursosService {
 
   constructor(private http: HttpClient) {
 
-
+    
    }
 
   obtenerDatos() {
-    return this.http.get('https://rickandmortyapi.com/api/character')
+    return this.http.get('https://finalspaceapi.com/api/v0/character')
   }
 }
