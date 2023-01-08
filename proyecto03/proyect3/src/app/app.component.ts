@@ -16,7 +16,7 @@ export class AppComponent {
     	
     recursosService.obtenerDatos().subscribe(respuesta => {     
       this.fotos = respuesta as Array<Foto>
-
+      console.log(this.fotos)
     })
   }
 

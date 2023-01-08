@@ -2,7 +2,7 @@ export interface Foto {
     
 
     name: string;
-    id: string;
+    species: string;
     img_url: string;
 
 }
