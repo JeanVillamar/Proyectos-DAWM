@@ -8,11 +8,15 @@ import { HttpClient } from '@angular/common/http';
 export class RecursosService {
 
   constructor(private http: HttpClient) {
-
     
    }
 
   obtenerDatos() {
-    return this.http.get('https://finalspaceapi.com/api/v0/character')
+    return this.http.get("https://finalspaceapi.com/api/v0/character")
+  }
+
+  getLocalizacion(){
+    return this.http.get("https://finalspaceapi.com/api/v0/location")
+
   }
 }

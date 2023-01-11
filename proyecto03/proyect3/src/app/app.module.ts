@@ -5,18 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import { PersonajeComponent } from './personaje/personaje.component';
+import { LocalitationsComponent } from './localitations/localitations.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactoComponent
+    ContactoComponent,
+    PersonajeComponent,
+    LocalitationsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],

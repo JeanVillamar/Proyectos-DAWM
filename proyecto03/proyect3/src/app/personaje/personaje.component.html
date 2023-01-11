@@ -1,0 +1,31 @@
+
+  
+  <div class="album py-5 bg-light">
+      <div class="container">
+  
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      
+      <div class="col" *ngFor="let personaje of personaje">
+        <div class="card shadow-sm">
+          <img src="{{personaje.img_url}}" alt="{{personaje.name}}">
+  
+          <div class="card-body">
+            <p class="card-text">{{personaje.name}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <!--<button class="btn btn-info" | ng-repeat="country in countries"> {{personaje.name}}</button>>-->
+
+              </div>
+              <small class="text-muted">Specie: {{personaje.species}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      
+  </div>
+  </div>

@@ -2,8 +2,9 @@
 
 <ul class="list-unstyled">
     <li *ngFor="let medio of medios">
-      <a href="#" class="text-white">
+      <a href="{{medio.url}}" class="text-white">
          {{medio.texto}} 
       </a>
     </li>
   </ul>
+

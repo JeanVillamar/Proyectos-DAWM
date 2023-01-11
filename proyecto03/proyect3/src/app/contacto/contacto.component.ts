@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent {
-   titulo:string = "Contáctame"
+   titulo:string = "INDEX"
 
    medios:any[] = [
-    {"texto":"En Twitter"},
-    {"texto":"En Facebook"},
-    {"texto":"Por correo electrónico"}
+    {"texto":"Characters", "url":"https://www.youtube.com/watch?v=YsPp0vYHlqU&list=RDGMEMJQXQAmqrnmK1SEjY_rKBGA&index=3"},
+    {"texto":"Locations", "url":"https://www.youtube.com/watch?v=YsPp0vYHlqU&list=RDGMEMJQXQAmqrnmK1SEjY_rKBGA&index=3"},
+    {"texto":"Episodes", "url":"https://www.youtube.com/watch?v=YsPp0vYHlqU&list=RDGMEMJQXQAmqrnmK1SEjY_rKBGA&index=3"}
   ]
 }
+
+
