@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PersonajeComponent } from './personaje/personaje.component';
 import { LocalitationsComponent } from './localitations/localitations.component';
+import { FraseComponent } from './frase/frase.component';
+import { EpisodioComponent } from './episodio/episodio.component';
 
 
 
@@ -18,7 +20,9 @@ import { LocalitationsComponent } from './localitations/localitations.component'
     AppComponent,
     ContactoComponent,
     PersonajeComponent,
-    LocalitationsComponent
+    LocalitationsComponent,
+    FraseComponent,
+    EpisodioComponent
   ],
   imports: [
     BrowserModule,

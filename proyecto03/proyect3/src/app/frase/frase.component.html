@@ -1,0 +1,46 @@
+
+  
+  <!--Main layout-->
+  <main class="my-5">
+    <div class="container">
+      
+        
+      <!--Section: Content-->
+      <section>
+        <div class="row gx-lg-5"> 
+            
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            
+            <!-- News block -->
+            
+            <div class="col" *ngFor="let frase of frase">                
+              <!-- News -->
+              <a href="" class="text-dark">
+                
+                <div class="row mb-4 border-bottom pb-2">
+                  <div class="col-3">
+                    <img src="{{frase.image}}"
+                         class="img-fluid shadow-1-strong rounded" alt="" />
+                  </div>
+  
+                  <div class="col-9">
+                    <p class="mb-2"><strong>"{{frase.quote}}"</strong></p>
+                    <p>
+                      <u> {{frase.by}}</u>
+                    </p>
+                  </div>
+                </div>
+              </a>
+  
+
+            </div>
+            <!-- News block -->
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+  
+      
+    </div>
+  </main>
+  <!--Main layout-->

@@ -9,6 +9,7 @@ import { RecursosService } from '../servicios/recursos.service';
   templateUrl: './localitations.component.html',
   styleUrls: ['./localitations.component.css']
 })
+
 export class LocalitationsComponent {
   title = 'Localizacion';
   localizacion:Localizacion[] = [];

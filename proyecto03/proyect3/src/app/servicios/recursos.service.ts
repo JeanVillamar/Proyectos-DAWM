@@ -17,6 +17,13 @@ export class RecursosService {
 
   getLocalizacion(){
     return this.http.get("https://finalspaceapi.com/api/v0/location")
+  }
 
+  getFrase(){
+    return this.http.get("https://finalspaceapi.com/api/v0/quote")
+  }
+
+  getEpisodio(){
+    return this.http.get("https://finalspaceapi.com/api/v0/episode")
   }
 }

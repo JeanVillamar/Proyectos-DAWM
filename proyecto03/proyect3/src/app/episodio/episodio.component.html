@@ -1,0 +1,58 @@
+
+  <!--Main layout-->
+  <main class="my-5">
+    <div class="container">
+  
+      <!--Section: Content-->
+      <section>
+        <div class="row gx-lg-5">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <!-- News block -->
+            <div class="col" *ngFor="let episodio of episodio">                
+              <!-- Featured image -->
+              <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
+                <img src="{{episodio.img_url}}" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+  
+              <!-- Article data -->
+              <div class="row mb-3">
+                <div class="col-6">
+                  <a href="" class="text-info">
+                    <i class="fas fa-plane"></i>
+                    {{episodio.name}}
+                  </a>
+                </div>
+  
+                <div class="col-6 text-end">
+                  <u> {{episodio.air_date}}</u>
+                </div>
+              </div>
+  
+              <!-- Article title and description -->
+              <a class="text-dark">  
+                <p>
+                  Director: {{episodio.director}}
+                  <br>
+                  Writer  : {{episodio.writer}}
+                </p>
+              </a>
+  
+              <hr />
+  
+
+            </div>
+            <!-- News block -->
+          </div>
+
+        </div>
+      </section>
+      <!--Section: Content-->
+  
+      
+    </div>
+  </main>
+  <!--Main layout-->
+  
